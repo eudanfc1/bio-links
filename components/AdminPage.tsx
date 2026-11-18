@@ -630,6 +630,7 @@ export default function AdminPage({ mode }: { mode: 'local' | 'supabase' }) {
                   <th>Logo URL</th>
                   <th>URL</th>
                   <th>Rótulo do botão</th>
+                  <th>Fundo</th>
                   <th>Ativo</th>
                   <th></th>
                 </tr>
@@ -645,6 +646,15 @@ export default function AdminPage({ mode }: { mode: 'local' | 'supabase' }) {
                     <td><input value={partner.logoUrl} onChange={(e) => doUpdatePartner({ ...partner, logoUrl: e.target.value })} style={{ width: 260, fontFamily: 'ui-monospace, monospace' }} /></td>
                     <td><input value={partner.url} onChange={(e) => doUpdatePartner({ ...partner, url: e.target.value })} style={{ width: 260, fontFamily: 'ui-monospace, monospace' }} /></td>
                     <td><input value={partner.label} onChange={(e) => doUpdatePartner({ ...partner, label: e.target.value })} style={{ width: 140 }} /></td>
+                    <td>
+                      <LinkBannerField
+                        slug={profile?.slug ?? ''}
+                        linkId={partner.id}
+                        prefix="partner-bg"
+                        value={partner.backgroundUrl || ''}
+                        onChange={(url) => doUpdatePartner({ ...partner, backgroundUrl: url || null })}
+                      />
+                    </td>
                     <td>
                       <input type="checkbox" checked={partner.active} onChange={(e) => doUpdatePartner({ ...partner, active: e.target.checked })} />
                     </td>
@@ -858,12 +868,14 @@ function StoryCard({
  * `link-bg:<id>`, então cada link tem seu próprio arquivo no servidor.
  */
 function LinkBannerField({
-  slug, linkId, value, onChange,
+  slug, linkId, value, onChange, prefix = 'link-bg',
 }: {
   slug: string;
   linkId: string;
   value: string;
   onChange: (url: string) => void;
+  /** Tipo do upload: `link-bg` (links) ou `partner-bg` (parceiros). */
+  prefix?: 'link-bg' | 'partner-bg';
 }) {
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
@@ -890,7 +902,7 @@ function LinkBannerField({
       const fd = new FormData();
       fd.append('file', file);
       fd.append('slug', slug);
-      fd.append('kind', `link-bg:${linkId}`);
+      fd.append('kind', `${prefix}:${linkId}`);
       const res = await fetch('/api/upload', { method: 'POST', body: fd });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {

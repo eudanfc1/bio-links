@@ -51,10 +51,10 @@ export async function POST(request: Request) {
   if (KINDS_FIXOS.includes(kind)) {
     base = kind;
   } else {
-    const porLink = kind.match(/^(link-bg|link-icon):([a-z0-9_-]+)$/i);
+    const porLink = kind.match(/^(link-bg|link-icon|partner-bg):([a-z0-9_-]+)$/i);
     if (!porLink) {
       return NextResponse.json(
-        { error: 'Tipo inválido (use "avatar", "cover", "background", "partner" ou "link-bg:<id>").' },
+        { error: 'Tipo inválido (use "avatar", "cover", "background", "partner", "link-bg:<id>" ou "partner-bg:<id>").' },
         { status: 400 },
       );
     }

@@ -142,6 +142,8 @@ export type Partner = {
   label: string;
   position: number;
   active: boolean;
+  /** Imagem de fundo do card do parceiro (opcional). */
+  backgroundUrl?: string | null;
 };
 
 export type ClickEvent = {

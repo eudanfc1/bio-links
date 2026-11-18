@@ -216,6 +216,7 @@ function mapPartner(row: Record<string, unknown>): Partner {
     label: (row.label as string) ?? '',
     position: (row.position as number) ?? 0,
     active: (row.active as boolean) ?? true,
+    backgroundUrl: (row.background_url as string) ?? null,
   };
 }
 
@@ -236,6 +237,7 @@ export async function supaSavePartner(partner: Partner): Promise<Partner> {
     label: partner.label,
     position: partner.position,
     active: partner.active,
+    background_url: partner.backgroundUrl ?? null,
   };
   const { data, error } = await db.from('partners').upsert(row).select('*').single();
   if (error) throw new Error(`supabase partners: ${error.message}`);
