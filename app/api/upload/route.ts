@@ -1,9 +1,14 @@
 import { NextResponse } from 'next/server';
 import { mkdir, writeFile, readdir, unlink } from 'node:fs/promises';
 import { join } from 'node:path';
+import { createClient } from '@supabase/supabase-js';
 
 /**
  * Upload da foto de perfil / capa.
+ *
+ * Com SUPABASE_SERVICE_ROLE_KEY configurada (ex.: na Vercel, onde o disco é
+ * somente leitura) a imagem vai para o bucket público `bio-links` do Supabase
+ * Storage. Sem ela, cai no modo local abaixo.
  *
  * Em modo local (file store) grava em `public/assets/profile/<slug>/`, que
  * é servido estaticamente pelo Next. O nome do arquivo é estável
@@ -64,6 +69,36 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Imagem muito grande (máximo 6 MB).' }, { status: 413 });
   }
 
+  // ---- Supabase Storage (Vercel) ----------------------------------------
+  const supaUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (supaUrl && serviceKey) {
+    const supa = createClient(supaUrl, serviceKey, { auth: { persistSession: false } });
+    const bucket = 'bio-links';
+    const path = `${slug}/${base}${ext}`;
+    const body = Buffer.from(await file.arrayBuffer());
+
+    const { error } = await supa.storage.from(bucket).upload(path, body, {
+      contentType: file.type,
+      upsert: true,
+      cacheControl: '3600',
+    });
+    if (error) {
+      return NextResponse.json({ error: `Falha no upload (Supabase): ${error.message}` }, { status: 500 });
+    }
+
+    // Remove a versão anterior com outra extensão (avatar.png -> avatar.jpg).
+    const { data: existentes } = await supa.storage.from(bucket).list(slug);
+    const antigos = (existentes ?? [])
+      .filter((f) => f.name.startsWith(`${base}.`) && f.name !== `${base}${ext}`)
+      .map((f) => `${slug}/${f.name}`);
+    if (antigos.length) await supa.storage.from(bucket).remove(antigos);
+
+    const { data: pub } = supa.storage.from(bucket).getPublicUrl(path);
+    return NextResponse.json({ url: `${pub.publicUrl}?v=${Date.now()}`, bytes: body.byteLength });
+  }
+
+  // ---- Disco local (cPanel / desenvolvimento) ------------------------------
   const dir = join(process.cwd(), 'public', 'assets', 'profile', slug);
   const filename = `${base}${ext}`;
 
