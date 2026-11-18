@@ -2,7 +2,10 @@ import { createClient } from '@supabase/supabase-js';
 import type { Profile, ProfileBundle, ProfileLink, Partner, Story, Notice, ClickEvent, ClickSummary } from './types';
 
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const anon = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+// Todas as chamadas deste arquivo rodam no servidor. Se SUPABASE_SERVICE_ROLE_KEY
+// existir (sem NEXT_PUBLIC_!), ela é usada e ignora o RLS; senão cai na anon key
+// (só leitura, conforme as policies do supabase-setup.sql).
+const anon = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
 /**
  * Cliente "frouxo": sem tipos gerados do banco, o `supabase-js` infere
@@ -31,7 +34,7 @@ let client: LooseClient | null = null;
 export function getSupabase(): LooseClient | null {
   if (!url || !anon) return null;
   if (!client) {
-    client = createClient(url, anon) as unknown as LooseClient;
+    client = createClient(url, anon, { auth: { persistSession: false } }) as unknown as LooseClient;
   }
   return client;
 }
@@ -48,7 +51,7 @@ export function hasSupabase(): boolean {
 /* ================================================================== */
 
 /** SELECT genérico para perfis públicos. */
-const profileSelect = 'id, slug, name, handle, motto, bio, avatar_url, cover_url, platform, platform_label, whatsapp, instagram, telegram, verified, theme, created_at, updated_at';
+const profileSelect = '*';
 
 /** Mapeia linha do Supabase para o tipo `Profile`. */
 function mapProfile(row: Record<string, unknown>): Profile {
@@ -138,7 +141,7 @@ export async function supaGetProfileById(id: string): Promise<Profile | null> {
 
 export async function supaSaveProfile(profile: Profile): Promise<Profile> {
   const db = getSupabase()!;
-  const { data } = await db
+  const { data, error } = await db
     .from('profiles')
     .upsert({
       id: profile.id,
@@ -166,6 +169,7 @@ export async function supaSaveProfile(profile: Profile): Promise<Profile> {
     } as Record<string, unknown>)
     .select(profileSelect)
     .single();
+  if (error) throw new Error(`supabase profiles: ${error.message}`);
   return data ? mapProfile(data) : null as unknown as Profile;
 }
 
@@ -179,7 +183,19 @@ export async function supaListLinks(profileId: string): Promise<ProfileLink[]> {
 
 export async function supaSaveLink(link: ProfileLink): Promise<ProfileLink> {
   const db = getSupabase()!;
-  const { data } = await db.from('profile_links').upsert(link).select('*').single();
+  const row = {
+    id: link.id,
+    profile_id: link.profileId,
+    label: link.label,
+    url: link.url,
+    kind: link.kind,
+    icon: link.icon,
+    background_url: link.backgroundUrl ?? null,
+    position: link.position,
+    active: link.active,
+  };
+  const { data, error } = await db.from('profile_links').upsert(row).select('*').single();
+  if (error) throw new Error(`supabase profile_links: ${error.message}`);
   return mapLink(data);
 }
 
@@ -221,7 +237,8 @@ export async function supaSavePartner(partner: Partner): Promise<Partner> {
     position: partner.position,
     active: partner.active,
   };
-  const { data } = await db.from('partners').upsert(row).select('*').single();
+  const { data, error } = await db.from('partners').upsert(row).select('*').single();
+  if (error) throw new Error(`supabase partners: ${error.message}`);
   return mapPartner(data);
 }
 
@@ -240,7 +257,17 @@ export async function supaListStories(profileId: string): Promise<Story[]> {
 
 export async function supaSaveStory(story: Story): Promise<Story> {
   const db = getSupabase()!;
-  const { data } = await db.from('stories').upsert(story).select('*').single();
+  const row = {
+    id: story.id,
+    profile_id: story.profileId,
+    media_url: story.mediaUrl,
+    media_type: story.mediaType,
+    caption: story.caption ?? '',
+    created_at: story.createdAt,
+    expires_at: story.expiresAt,
+  };
+  const { data, error } = await db.from('stories').upsert(row).select('*').single();
+  if (error) throw new Error(`supabase stories: ${error.message}`);
   return mapStory(data);
 }
 
@@ -265,7 +292,17 @@ export async function supaGetActiveNotice(profileId: string): Promise<Notice | n
 
 export async function supaSaveNotice(notice: Notice): Promise<Notice> {
   const db = getSupabase()!;
-  const { data } = await db.from('notices').upsert(notice).select('*').single();
+  const row = {
+    id: notice.id,
+    profile_id: notice.profileId,
+    kicker: notice.kicker,
+    text: notice.text,
+    url: notice.url,
+    ends_at: notice.endsAt,
+    active: notice.active,
+  };
+  const { data, error } = await db.from('notices').upsert(row).select('*').single();
+  if (error) throw new Error(`supabase notices: ${error.message}`);
   return mapNotice(data);
 }
 
@@ -273,7 +310,17 @@ export async function supaSaveNotice(notice: Notice): Promise<Notice> {
 
 export async function supaRecordClick(click: Omit<ClickEvent, 'id'>): Promise<void> {
   const db = getSupabase()!;
-  await db.from('clicks').insert(click);
+  const c = click as Record<string, unknown>;
+  const { error } = await db.from('clicks').insert({
+    id: crypto.randomUUID(),
+    profile_id: c.profileId,
+    link_id: c.linkId ?? null,
+    target: c.target,
+    created_at: c.createdAt ?? new Date().toISOString(),
+    referrer: c.referrer ?? '',
+    user_agent: c.userAgent ?? '',
+  });
+  if (error) console.error('supabase clicks:', error.message);
 }
 
 export async function supaSummarizeClicks(
