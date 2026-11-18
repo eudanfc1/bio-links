@@ -29,7 +29,7 @@ function useAdmin() {
   }, []);
 
   const login = (pwd: string) => {
-    if (pwd === 'admin123') {
+    if (pwd === 'levi@2026') {
       sessionStorage.setItem('admin', '1');
       setAdmin(true);
       return true;
@@ -1112,7 +1112,7 @@ function LoginScreen({ onLogin }: { onLogin: (pwd: string) => boolean }) {
         <div className="field">
           <input type="password" placeholder="Senha" value={pwd} onChange={(e) => { setPwd(e.target.value); setErr(false); }} autoFocus />
         </div>
-        {err && <p style={{ color: '#ef4444', fontSize: 13, margin: '0 0 10px' }}>Senha incorreta. (Dica: admin123)</p>}
+        {err && <p style={{ color: '#ef4444', fontSize: 13, margin: '0 0 10px' }}>Senha incorreta. (seu ip foi salvo,)</p>}
         <button className="btn btn-primary" style={{ width: '100%' }} type="submit">Entrar</button>
       </form>
     </div>
