@@ -1,0 +1,1618 @@
+/* ==========================================================================
+   Bio Links Clone - Profile Reference CSS
+   Reconstructed from minified Tailwind CSS v4 output + reference HTML analysis
+   Theme: babyblue (dark theme with blue accent)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   FONT IMPORTS
+   -------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+/* --------------------------------------------------------------------------
+   CSS CUSTOM PROPERTIES - ANIMATION
+   -------------------------------------------------------------------------- */
+@property --spin {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --arena-led-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+/* --------------------------------------------------------------------------
+   KEYFRAME ANIMATIONS
+   -------------------------------------------------------------------------- */
+
+/* Rotating conic gradient border */
+@keyframes spin-border {
+  from { --spin: 0deg; }
+  to   { --spin: 360deg; }
+}
+
+/* Shine sweep across CTA button */
+@keyframes sheen {
+  0%   { transform: translate(-120%); }
+  100% { transform: translate(120%); }
+}
+
+/* Particle floating upward */
+@keyframes float-up {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0);
+    opacity: 0;
+  }
+}
+
+/* Light sweep across banner image */
+@keyframes bio-banner-sweep {
+  0%   { transform: translate(-130%); }
+  100% { transform: translate(130%); }
+}
+
+/* Tagline gentle floating */
+@keyframes arena-tagline-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+
+/* Avatar glow pulse */
+@keyframes bio-profile-glow {
+  0%, 100% { opacity: 1; filter: brightness(1); }
+  50%      { opacity: 0.8; filter: brightness(1.3); }
+}
+
+/* Star twinkling on banner */
+@keyframes twinkle {
+  0%   { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+/* Money rain particles */
+@keyframes money-rain {
+  0% {
+    transform: translateY(-10vh) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(720deg) scale(0.5);
+    opacity: 0;
+  }
+}
+
+/* Shooting star animation */
+@keyframes shooting-star {
+  0% {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(300px) translateY(200px) scale(0);
+    opacity: 0;
+  }
+}
+
+/* Ripple expand effect */
+@keyframes ripple-expand {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+  }
+}
+
+/* Online pulse ring */
+@keyframes pulse-ring {
+  0%   { transform: scale(1); opacity: 1; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
+
+/* Caret blink */
+@keyframes caret-blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+
+/* LED angle animation for neon effects */
+@keyframes led-rotate {
+  from { --arena-led-angle: 0deg; }
+  to   { --arena-led-angle: 360deg; }
+}
+
+/* Enter animation */
+@keyframes enter {
+  from {
+    opacity: var(--tw-enter-opacity, 0);
+    transform: translate(
+      var(--tw-enter-translate-x, 0),
+      var(--tw-enter-translate-y, 8px)
+    ) scale(var(--tw-enter-scale, 1));
+    filter: blur(var(--tw-enter-blur, 0));
+  }
+}
+
+/* Dock slide up */
+@keyframes dock-slide-up {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+/* --------------------------------------------------------------------------
+   THEME CSS CUSTOM PROPERTIES - BABYBLUE (Dark Blue Theme)
+   -------------------------------------------------------------------------- */
+:root,
+[data-bio-theme="babyblue"] {
+  /* Brand palette - electric blue */
+  --brand: 200 100% 50%;
+  --brand-soft: 200 80% 45%;
+  --brand-strong: 200 100% 60%;
+  --brand-foreground: 210 40% 98%;
+
+  /* Background layers */
+  --bio-bg: 220 40% 6%;
+  --bio-surface: 220 30% 10%;
+  --bio-text: 210 40% 96%;
+
+  /* Semantic colors */
+  --foreground: 210 40% 96%;
+  --muted-foreground: 215 20% 65%;
+  --border: 220 30% 18%;
+
+  /* Glow colors */
+  --glow: 200 100% 50%;
+  --instagram: 330 80% 55%;
+  --telegram: 200 80% 50%;
+  --whatsapp: 150 70% 42%;
+
+  /* Russian flag colors */
+  --rus-white: 0 0% 100%;
+  --rus-blue: 210 70% 42%;
+  --rus-red: 0 75% 48%;
+}
+
+/* --------------------------------------------------------------------------
+   GLOBAL / BASE STYLES
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Manrope", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: hsl(var(--bio-bg));
+  color: hsl(var(--bio-text));
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --------------------------------------------------------------------------
+   FONT UTILITIES
+   -------------------------------------------------------------------------- */
+.font-display {
+  font-family: "Barlow Condensed", "Manrope", ui-sans-serif, sans-serif;
+}
+
+/* --------------------------------------------------------------------------
+   MONEY RAIN - Floating emoji particles
+   -------------------------------------------------------------------------- */
+.bio-money-rain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.bio-money-rain .money-emoji {
+  position: absolute;
+  top: -10%;
+  font-size: 1.5rem;
+  animation: money-rain linear infinite;
+  opacity: 0;
+  filter: drop-shadow(0 0 4px hsl(var(--brand-soft) / 0.6));
+  user-select: none;
+}
+
+.bio-money-rain .money-emoji:nth-child(1)  { left: 5%;  animation-duration: 8s;  animation-delay: 0s;   font-size: 1.2rem; }
+.bio-money-rain .money-emoji:nth-child(2)  { left: 15%; animation-duration: 10s; animation-delay: 1.5s; font-size: 1.6rem; }
+.bio-money-rain .money-emoji:nth-child(3)  { left: 25%; animation-duration: 7s;  animation-delay: 3s;   font-size: 1.4rem; }
+.bio-money-rain .money-emoji:nth-child(4)  { left: 35%; animation-duration: 9s;  animation-delay: 0.8s; font-size: 1.8rem; }
+.bio-money-rain .money-emoji:nth-child(5)  { left: 45%; animation-duration: 11s; animation-delay: 2.2s; font-size: 1.3rem; }
+.bio-money-rain .money-emoji:nth-child(6)  { left: 55%; animation-duration: 8.5s;animation-delay: 4s;   font-size: 1.5rem; }
+.bio-money-rain .money-emoji:nth-child(7)  { left: 65%; animation-duration: 9.5s;animation-delay: 1s;   font-size: 1.7rem; }
+.bio-money-rain .money-emoji:nth-child(8)  { left: 75%; animation-duration: 7.5s;animation-delay: 3.5s; font-size: 1.4rem; }
+.bio-money-rain .money-emoji:nth-child(9)  { left: 85%; animation-duration: 10.5s;animation-delay: 2.8s; font-size: 1.6rem; }
+.bio-money-rain .money-emoji:nth-child(10) { left: 92%; animation-duration: 8.8s;animation-delay: 0.5s; font-size: 1.2rem; }
+
+/* --------------------------------------------------------------------------
+   SHOOTING STAR - Animated star streak on tagline
+   -------------------------------------------------------------------------- */
+.shooting-star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: hsl(var(--brand-foreground));
+  border-radius: 50%;
+  box-shadow:
+    0 0 6px 2px hsl(var(--brand)),
+    0 0 12px 4px hsl(var(--brand-soft));
+  animation: shooting-star 3s ease-in-out infinite;
+  opacity: 0;
+}
+
+.shooting-star::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(to left, hsl(var(--brand-foreground)), transparent);
+  transform: translateY(-50%);
+  border-radius: 1px;
+}
+
+/* --------------------------------------------------------------------------
+   ARENA HEADER - Top navigation bar
+   -------------------------------------------------------------------------- */
+.arena-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: linear-gradient(135deg, #0ea5e9, #06b6d4, #14b8a6, #0891b2);
+  background-size: 300% 300%;
+  animation: headerChameleon 6s ease infinite;
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+  border-bottom: 1px solid rgba(14, 165, 233, 0.3);
+}
+
+@keyframes headerChameleon {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.arena-header .header-logo {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.arena-header .header-handle {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.9);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+.arena-header .header-handle span {
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.arena-header .header-ig {
+  color: #ffffff;
+}
+
+/* Balanço lateral suave: o @ do topo vai para um lado e para o outro. */
+@keyframes header-handle-sway {
+  0%,
+  100% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+}
+
+.header-handle-sway {
+  animation: header-handle-sway 3.4s ease-in-out infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-handle-sway {
+    animation: none;
+  }
+}
+
+.arena-header .hamburger-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.arena-header .hamburger-btn:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* --------------------------------------------------------------------------
+   ARENA HERO - Main banner section
+   -------------------------------------------------------------------------- */
+.arena-hero {
+  position: relative;
+  padding: 0 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Banner Frame - rotating conic gradient border */
+.bio-banner-frame {
+  position: relative;
+  border-radius: 0.75rem;
+  padding: 2px;
+  background: conic-gradient(
+    from var(--spin),
+    hsl(var(--brand-strong)),
+    hsl(var(--brand)),
+    hsl(var(--brand-soft)),
+    hsl(var(--brand-strong)) 35%,
+    hsl(var(--brand-strong)) 80%,
+    hsl(var(--brand))
+  );
+  box-shadow: 0 0 22px -6px hsl(var(--brand) / 0.65);
+  animation: spin-border 5s linear infinite;
+  overflow: hidden;
+}
+
+.bio-banner-image {
+  position: relative;
+  aspect-ratio: 2 / 1;
+  border-radius: calc(0.75rem - 2px);
+  overflow: hidden;
+  background: hsl(var(--bio-surface));
+}
+
+.bio-banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Shimmer sweep on banner */
+.bio-banner-image::after {
+  content: '';
+  pointer-events: none;
+  background: linear-gradient(
+    105deg,
+    transparent 30%,
+    hsl(var(--brand-soft)) 42%,
+    hsl(var(--brand-soft)) 50%,
+    hsl(var(--brand-soft)) 58%,
+    transparent 70%
+  );
+  position: absolute;
+  inset: 0;
+  animation: bio-banner-sweep 6s ease-in-out infinite;
+  transform: translate(-130%);
+}
+
+/* Star particles on banner */
+.bio-stars {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(1.5px 1.5px at 12% 18%, hsl(var(--brand-soft)), transparent),
+    radial-gradient(1px 1px at 78% 12%, hsl(var(--brand-soft)), transparent),
+    radial-gradient(1.5px 1.5px at 64% 38%, hsl(var(--brand)), transparent),
+    radial-gradient(1px 1px at 22% 52%, hsl(var(--brand-soft)), transparent),
+    radial-gradient(1.5px 1.5px at 88% 66%, hsl(var(--brand)), transparent),
+    radial-gradient(1px 1px at 40% 80%, hsl(var(--brand-soft)), transparent),
+    radial-gradient(1px 1px at 8% 92%, hsl(var(--brand)), transparent);
+  background-size: 100% 900px;
+  animation: 4s ease-in-out infinite alternate twinkle;
+}
+
+/* Grid lines overlay */
+.bio-grid-lines {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(hsl(var(--brand) / 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--brand) / 0.07) 1px, transparent 1px);
+  background-size: 44px 44px;
+  -webkit-mask-image: radial-gradient(70% 50% at 50% 0, #000, #0000);
+  mask-image: radial-gradient(70% 50% at 50% 0, #000, #0000);
+}
+
+/* --------------------------------------------------------------------------
+   STORY BADGE - Overlapping the banner
+   -------------------------------------------------------------------------- */
+.story-bubble {
+  position: absolute;
+  z-index: 10;
+  background: linear-gradient(135deg, #833ab4, #e1306c, #fd1d1d, #f77737);
+  background-size: 300% 300%;
+  animation: gradientShift 4s ease infinite;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.story-ring {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 9999px;
+  background: conic-gradient(
+    from 200deg,
+    hsl(var(--brand-soft)),
+    hsl(var(--brand)),
+    hsl(var(--brand-strong)),
+    hsl(var(--brand-soft))
+  );
+  box-shadow:
+    0 0 0 1px hsl(var(--brand-soft) / 0.8),
+    0 0 18px 2px hsl(var(--brand) / 0.65),
+    0 0 60px -6px hsl(var(--brand) / 0.65);
+  animation: spin-border 6s linear infinite, bio-profile-glow 3s ease-in-out infinite;
+}
+
+.avatar-glow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border-radius: 9999px;
+  background: conic-gradient(
+    from var(--spin),
+    #e1306c,
+    #c13584,
+    #833ab4,
+    #e1306c
+  );
+  box-shadow:
+    0 0 0 1px #e1306c99,
+    0 0 12px 1px #e1306c66,
+    0 0 35px -8px #e1306c66;
+  animation: spin-border 6s linear infinite, bio-profile-glow 3s ease-in-out infinite;
+}
+
+.avatar-bubble {
+  position: relative;
+  border-radius: 9999px;
+  overflow: hidden;
+  background: hsl(var(--bio-surface));
+}
+
+.avatar-bubble::after {
+  content: '';
+  pointer-events: none;
+  border-radius: inherit;
+  box-shadow: 0 5px 9px -5px hsl(var(--brand-soft) / 0.75) inset;
+  position: absolute;
+  inset: 0;
+}
+
+.avatar-bubble img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Story badge positioning - overlapping bottom-right of banner */
+.arena-hero .story-badge-wrap {
+  position: absolute;
+  bottom: -1.5rem;
+  right: 1rem;
+  z-index: 20;
+}
+
+/* --------------------------------------------------------------------------
+   TAGLINE - "~ real blessed ~" shooting star pill
+   -------------------------------------------------------------------------- */
+.bio-tagline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: conic-gradient(
+    from var(--spin),
+    hsl(var(--brand)) 0deg,
+    hsl(var(--brand-soft)) 40deg,
+    hsl(var(--brand)) 90deg,
+    hsl(var(--brand)) 180deg,
+    hsl(var(--brand)) 230deg,
+    hsl(var(--brand)) 280deg
+  );
+  box-shadow: 0 0 20px -4px hsl(var(--brand) / 0.6);
+  border-radius: 9999px;
+  padding: 1px;
+  animation: spin-border 4s linear infinite, arena-tagline-float 6s ease-in-out infinite;
+  position: relative;
+}
+
+.bio-tagline-inner {
+  background: hsl(var(--bio-bg));
+  border-radius: inherit;
+  padding: 0.35rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: hsl(var(--brand));
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Shooting star on tagline */
+.bio-tagline .shooting-star {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+}
+
+/* --------------------------------------------------------------------------
+   WELCOME MESSAGE
+   -------------------------------------------------------------------------- */
+.arena-welcome {
+  font-size: 0.95rem;
+  color: hsl(var(--muted-foreground));
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin-top: 0.25rem;
+}
+
+/* --------------------------------------------------------------------------
+   PROFILE NAME - Huge Barlow Condensed text
+   -------------------------------------------------------------------------- */
+.arena-hero-name {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: hsl(var(--foreground));
+  text-shadow:
+    0 0 40px hsl(var(--brand) / 0.3),
+    0 2px 4px hsl(var(--bio-bg));
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   VERIFIED BADGE
+   -------------------------------------------------------------------------- */
+.bio-verified {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: hsl(var(--brand));
+  color: hsl(var(--brand-foreground));
+  font-size: 0.7rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px -2px hsl(var(--brand) / 0.5);
+}
+
+.bio-verified svg {
+  width: 0.75rem;
+  height: 0.75rem;
+  fill: currentColor;
+}
+
+/* --------------------------------------------------------------------------
+   SCROLL HINT
+   -------------------------------------------------------------------------- */
+.arena-scroll-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: hsl(var(--muted-foreground));
+  padding: 0.75rem 1rem;
+  animation: caret-blink 2s ease-in-out infinite;
+}
+
+.arena-scroll-hint .scroll-arrow {
+  display: inline-block;
+  animation: arena-tagline-float 1.5s ease-in-out infinite;
+}
+
+/* --------------------------------------------------------------------------
+   PARTNER SECTION - Logo + "Parceiro oficial"
+   -------------------------------------------------------------------------- */
+.bio-partner-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 1rem;
+  background: hsl(var(--bio-surface) / 0.5);
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.75rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.bio-platform-logo {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  border: 2px solid hsl(var(--brand) / 0.55);
+  box-shadow:
+    0 0 0 4px hsl(var(--brand) / 0.12),
+    0 0 28px -6px hsl(var(--brand) / 0.75);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(var(--bio-bg));
+  font-size: 1.25rem;
+}
+
+.bio-platform-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bio-partner-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.bio-partner-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: hsl(var(--muted-foreground));
+}
+
+.bio-partner-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: hsl(var(--foreground));
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* --------------------------------------------------------------------------
+   CTA WRAP - "Jogar agora" glass card with shine
+   -------------------------------------------------------------------------- */
+.arena-cta-wrap {
+  margin: 1rem;
+  position: relative;
+}
+
+.bio-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.875rem;
+  color: hsl(var(--brand-foreground));
+  background: linear-gradient(
+    180deg,
+    hsl(var(--brand-soft)) 0%,
+    hsl(var(--brand)) 45%,
+    hsl(var(--brand-strong)) 100%
+  );
+  box-shadow:
+    0 1px 0 0 oklch(100% 0 0 / 0.45) inset,
+    0 -3px 0 0 hsl(var(--brand-strong)) inset,
+    0 18px 50px -12px hsl(var(--brand) / 0.7);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.16s, box-shadow 0.16s;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+}
+
+/* CTA Shine animation */
+.arena-cta-shine::after {
+  content: '';
+  background: linear-gradient(
+    110deg,
+    transparent 30%,
+    oklch(100% 0 0 / 0.4) 50%,
+    transparent 70%
+  );
+  animation: sheen 3.2s ease-in-out infinite;
+  position: absolute;
+  inset: 0;
+  transform: translate(-120%);
+}
+
+.bio-cta:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 1px 0 0 oklch(100% 0 0 / 0.45) inset,
+    0 -3px 0 0 hsl(var(--brand-strong)) inset,
+    0 0 0 1px hsl(var(--brand-foreground) / 0.3),
+    0 22px 50px -18px hsl(var(--brand) / 0.9);
+}
+
+.bio-cta:active {
+  transform: translateY(1px) scale(0.99);
+}
+
+.bio-cta .cta-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.bio-cta .cta-text {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.bio-cta .cta-arrow {
+  margin-left: auto;
+  font-size: 1.25rem;
+  transition: transform 0.2s;
+}
+
+.bio-cta:hover .cta-arrow {
+  transform: translateX(4px);
+}
+
+/* --------------------------------------------------------------------------
+   GLASS CARD - Glassmorphism card component
+   -------------------------------------------------------------------------- */
+.glass-card {
+  background: linear-gradient(
+    150deg,
+    hsl(var(--bio-surface)),
+    hsl(var(--bio-bg))
+  );
+  position: relative;
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  backdrop-filter: blur(18px) saturate(140%);
+  border: 1px solid hsl(var(--brand-soft) / 0.14);
+  box-shadow:
+    0 1px 0 0 oklch(100% 0 0 / 0.08) inset,
+    0 30px 80px -40px hsl(var(--brand) / 0.55);
+  border-radius: 0.875rem;
+  overflow: hidden;
+}
+
+/* Glass card with neon border variant */
+.glass-card.neon-border {
+  --glow: hsl(var(--brand));
+  isolation: isolate;
+  position: relative;
+  padding: 1.5px;
+}
+
+.glass-card.neon-border::before {
+  content: '';
+  z-index: -1;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--spin),
+    transparent 0deg,
+    transparent 250deg,
+    var(--glow) 320deg,
+    oklch(100% 0 0 / 0.9) 345deg,
+    transparent 360deg
+  );
+  opacity: 0.75;
+  padding: 1.5px;
+  transition: opacity 0.25s;
+  animation: 4s linear infinite spin-border;
+  position: absolute;
+  inset: -1px;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#000 0 0) content-box exclude,
+    linear-gradient(#000 0 0);
+}
+
+.glass-card.neon-border:hover::before {
+  opacity: 1;
+  animation-duration: 1.8s;
+}
+
+/* --------------------------------------------------------------------------
+   NEON BUTTON - Glowing button effect
+   -------------------------------------------------------------------------- */
+.neon-btn {
+  --glow: hsl(var(--brand));
+  box-shadow: 0 0 8px 2px rgba(14, 165, 233, 0.7), 0 0 20px 5px rgba(20, 184, 166, 0.4);
+  transition: box-shadow 0.25s, border-color 0.25s;
+  border: none;
+  background: linear-gradient(135deg, #0ea5e9, #06b6d4, #14b8a6, #0891b2);
+  background-size: 300% 300%;
+  animation: headerChameleon 6s ease infinite, btnPulseGlow 1.5s ease-in-out infinite;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.neon-btn:hover {
+  box-shadow:
+    0 0 0 3px rgba(14, 165, 233, 0.9),
+    0 0 25px rgba(14, 165, 233, 1),
+    0 0 50px rgba(20, 184, 166, 0.7),
+    0 0 0 1px hsl(var(--glow) / 0.55),
+    0 0 32px -4px hsl(var(--glow) / 0.7),
+    0 22px 50px -18px hsl(var(--glow) / 0.9);
+  animation-duration: 3s, 1.5s;
+}
+
+@keyframes btnPulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 8px rgba(14, 165, 233, 0.9)) drop-shadow(0 0 20px rgba(20, 184, 166, 0.6));
+  }
+  50% {
+    transform: scale(1.02);
+    filter: drop-shadow(0 0 15px rgba(14, 165, 233, 1)) drop-shadow(0 0 30px rgba(20, 184, 166, 0.8));
+  }
+}
+
+/* --------------------------------------------------------------------------
+   GLOW BRAND - Partner card glow effect
+   -------------------------------------------------------------------------- */
+.glow-brand {
+  --glow: hsl(var(--brand));
+  box-shadow:
+    0 0 10px 3px hsl(var(--brand) / 0.45),
+    0 0 28px 6px hsl(var(--brand-soft) / 0.35),
+    0 0 60px -12px hsl(var(--brand) / 0.55);
+  transition: box-shadow 0.3s;
+}
+.glow-brand:hover {
+  --glow: hsl(var(--brand));
+  box-shadow:
+    0 0 16px 4px hsl(var(--brand) / 0.7),
+    0 0 40px 10px hsl(var(--brand-soft) / 0.55),
+    0 0 80px -8px hsl(var(--brand) / 0.7);
+}
+
+/* --------------------------------------------------------------------------
+   BIO PILL - Simple colored pill background
+   -------------------------------------------------------------------------- */
+.bio-pill {
+  background: hsl(var(--brand) / 0.12);
+  border: 1px solid hsl(var(--brand) / 0.55);
+  box-shadow: 0 0 24px -8px hsl(var(--brand) / 0.6);
+  border-radius: 9999px;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.625rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+}
+
+/* --------------------------------------------------------------------------
+   BIO SURFACE CARD - Alternative card style
+   -------------------------------------------------------------------------- */
+.bio-surface-card {
+  background: linear-gradient(
+    160deg,
+    hsl(var(--bio-surface)),
+    hsl(var(--bio-bg))
+  );
+  border: 1px solid hsl(var(--brand) / 0.22);
+  box-shadow:
+    0 1px 0 0 hsl(var(--brand-soft) / 0.1) inset,
+    0 20px 60px -30px hsl(var(--brand) / 0.4);
+  border-radius: 0.875rem;
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   BIO AVATAR RING - Avatar with conic gradient ring
+   -------------------------------------------------------------------------- */
+.bio-avatar-ring {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 9999px;
+  background: conic-gradient(
+    from 200deg,
+    hsl(var(--brand-soft)),
+    hsl(var(--brand)),
+    hsl(var(--brand-strong)),
+    hsl(var(--brand-soft))
+  );
+  box-shadow: 0 0 40px -6px hsl(var(--brand) / 0.65);
+}
+
+/* --------------------------------------------------------------------------
+   BIO PARTICLE - Floating particle effect
+   -------------------------------------------------------------------------- */
+.bio-particle {
+  background: hsl(var(--brand-soft));
+  box-shadow: 0 0 8px hsl(var(--brand));
+  pointer-events: none;
+  border-radius: 9999px;
+  animation: linear infinite float-up;
+  position: absolute;
+  bottom: -10px;
+}
+
+/* --------------------------------------------------------------------------
+   RIPPLE DOT - Ripple click effect
+   -------------------------------------------------------------------------- */
+.ripple-dot {
+  pointer-events: none;
+  background: hsl(var(--brand-soft) / 0.55);
+  border-radius: 9999px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation: ripple-expand 0.6s ease-out forwards;
+}
+
+/* --------------------------------------------------------------------------
+   DESTINOS DISPONÍVEIS - Shortcut/Destination cards grid
+   -------------------------------------------------------------------------- */
+.arena-shortcut-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  padding: 0 1rem;
+  margin: 1rem 0;
+}
+
+.arena-shortcut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 1.25rem 0.75rem;
+  border-radius: 0.875rem;
+  background: linear-gradient(
+    150deg,
+    hsl(var(--bio-surface)),
+    hsl(var(--bio-bg))
+  );
+  border: 1px solid hsl(var(--brand-soft) / 0.14);
+  box-shadow:
+    0 1px 0 0 oklch(100% 0 0 / 0.08) inset,
+    0 20px 60px -30px hsl(var(--brand) / 0.5);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.arena-shortcut::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 0%,
+    hsl(var(--brand) / 0.08) 0%,
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.arena-shortcut:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 1px 0 0 oklch(100% 0 0 / 0.08) inset,
+    0 0 0 1px hsl(var(--brand-soft) / 0.3),
+    0 30px 60px -20px hsl(var(--brand) / 0.6);
+}
+
+.arena-shortcut:hover::before {
+  opacity: 1;
+}
+
+.arena-shortcut .shortcut-icon {
+  font-size: 2rem;
+  line-height: 1;
+  filter: drop-shadow(0 0 8px hsl(var(--brand) / 0.4));
+}
+
+.arena-shortcut .shortcut-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: hsl(var(--foreground));
+}
+
+.arena-shortcut .shortcut-desc {
+  font-size: 0.7rem;
+  color: hsl(var(--muted-foreground));
+  line-height: 1.4;
+  max-width: 90%;
+}
+
+/* --------------------------------------------------------------------------
+   NOSSOS JOGOS - Game cards with percentage meters
+   -------------------------------------------------------------------------- */
+.arena-games-section {
+  padding: 1rem;
+}
+
+.arena-games-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: hsl(var(--foreground));
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.arena-games-title::after {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    hsl(var(--brand)),
+    transparent
+  );
+  margin: 0.5rem auto 0;
+}
+
+.arena-games-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.arena-game {
+  border-radius: 0.875rem;
+  overflow: hidden;
+  background: linear-gradient(
+    150deg,
+    hsl(var(--bio-surface)),
+    hsl(var(--bio-bg))
+  );
+  border: 1px solid hsl(var(--brand-soft) / 0.14);
+  box-shadow:
+    0 1px 0 0 oklch(100% 0 0 / 0.08) inset,
+    0 20px 60px -30px hsl(var(--brand) / 0.5);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.arena-game:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow:
+    0 1px 0 0 oklch(100% 0 0 / 0.08) inset,
+    0 0 0 1px hsl(var(--brand-soft) / 0.3),
+    0 30px 60px -20px hsl(var(--brand) / 0.6);
+}
+
+.arena-game-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  display: block;
+  background: hsl(var(--bio-surface));
+}
+
+.arena-game-info {
+  padding: 0.75rem;
+}
+
+.arena-game-name {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: hsl(var(--foreground));
+  margin-bottom: 0.5rem;
+}
+
+/* Percentage meter */
+.percentage-meter {
+  width: 100%;
+  height: 6px;
+  background: hsl(var(--bio-bg));
+  border-radius: 9999px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid hsl(var(--border));
+}
+
+.percentage-fill {
+  height: 100%;
+  border-radius: 9999px;
+  background: linear-gradient(
+    90deg,
+    hsl(var(--brand-soft)),
+    hsl(var(--brand)),
+    hsl(var(--brand-strong))
+  );
+  box-shadow: 0 0 8px -2px hsl(var(--brand) / 0.6);
+  transition: width 0.8s ease-out;
+  position: relative;
+}
+
+.percentage-fill::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: hsl(var(--brand-foreground));
+  box-shadow: 0 0 6px 2px hsl(var(--brand) / 0.6);
+}
+
+.percentage-value {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: hsl(var(--brand));
+  margin-top: 0.3rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* --------------------------------------------------------------------------
+   VIP SECTION
+   -------------------------------------------------------------------------- */
+.arena-vip-section {
+  margin: 1.5rem 1rem;
+  padding: 1.5rem;
+  border-radius: 0.875rem;
+  background: linear-gradient(
+    150deg,
+    hsl(var(--bio-surface)),
+    hsl(var(--bio-bg))
+  );
+  border: 1px solid hsl(var(--brand-soft) / 0.2);
+  box-shadow:
+    0 1px 0 0 oklch(100% 0 0 / 0.08) inset,
+    0 30px 80px -30px hsl(var(--brand) / 0.5);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.arena-vip-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at 50% 0%,
+    hsl(var(--brand) / 0.06) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.arena-vip-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 0 12px hsl(var(--brand) / 0.5));
+  animation: arena-tagline-float 3s ease-in-out infinite;
+}
+
+.arena-vip-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: hsl(var(--foreground));
+  margin-bottom: 0.25rem;
+}
+
+.arena-vip-subtitle {
+  font-size: 0.8rem;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 1rem;
+}
+
+.arena-vip-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  background: linear-gradient(
+    180deg,
+    hsl(var(--brand-soft)),
+    hsl(var(--brand))
+  );
+  color: hsl(var(--brand-foreground));
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  box-shadow:
+    0 1px 0 0 oklch(100% 0 0 / 0.3) inset,
+    0 8px 24px -8px hsl(var(--brand) / 0.6);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.arena-vip-cta:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 1px 0 0 oklch(100% 0 0 / 0.3) inset,
+    0 0 0 1px hsl(var(--brand-foreground) / 0.3),
+    0 12px 32px -8px hsl(var(--brand) / 0.8);
+}
+
+/* --------------------------------------------------------------------------
+   BOTTOM DOCK - Navigation bar
+   -------------------------------------------------------------------------- */
+.arena-dock {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+  background: hsl(var(--bio-bg) / 0.85);
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+  border-top: 1px solid hsl(var(--border));
+  animation: dock-slide-up 0.4s ease-out;
+}
+
+.arena-dock-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.arena-dock-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  color: hsl(var(--muted-foreground));
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: color 0.2s, background 0.2s;
+  cursor: pointer;
+  border: none;
+  background: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.arena-dock-item.active,
+.arena-dock-item:hover {
+  color: hsl(var(--brand));
+  background: hsl(var(--brand) / 0.08);
+}
+
+.arena-dock-item .dock-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.arena-dock-hide {
+  position: absolute;
+  top: -1.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(var(--bio-bg) / 0.85);
+  border: 1px solid hsl(var(--border));
+  border-bottom: none;
+  border-radius: 0.375rem 0.375rem 0 0;
+  color: hsl(var(--muted-foreground));
+  cursor: pointer;
+  font-size: 0.7rem;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.arena-dock-hide:hover {
+  color: hsl(var(--brand));
+}
+
+/* --------------------------------------------------------------------------
+   FOOTER
+   -------------------------------------------------------------------------- */
+.arena-footer {
+  padding: 2rem 1rem 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.arena-footer .footer-age {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: hsl(var(--muted-foreground));
+  letter-spacing: 0.05em;
+}
+
+.arena-footer .footer-divider {
+  width: 2rem;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    hsl(var(--brand) / 0.3),
+    transparent
+  );
+}
+
+.arena-footer .footer-brand {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: hsl(var(--muted-foreground));
+}
+
+.arena-footer .footer-brand span {
+  color: hsl(var(--brand));
+}
+
+/* --------------------------------------------------------------------------
+   SECTION HEADERS
+   -------------------------------------------------------------------------- */
+.arena-section-header {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: hsl(var(--foreground));
+  text-align: center;
+  padding: 1rem 1rem 0.5rem;
+  position: relative;
+}
+
+.arena-section-header::after {
+  content: '';
+  display: block;
+  width: 2rem;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    hsl(var(--brand)),
+    transparent
+  );
+  margin: 0.5rem auto 0;
+}
+
+/* --------------------------------------------------------------------------
+   RUSSIAN FLAG STRIP
+   -------------------------------------------------------------------------- */
+.rus-strip {
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    hsl(var(--rus-white)),
+    hsl(var(--rus-blue)) 48%,
+    hsl(var(--rus-red))
+  );
+  border-radius: 9999px;
+}
+
+.rus-tricolor {
+  height: 4px;
+  background: linear-gradient(
+    180deg,
+    hsl(var(--rus-white)) 0 33.33%,
+    hsl(var(--rus-blue)) 33.33% 66.66%,
+    hsl(var(--rus-red)) 66.66% 100%
+  );
+}
+
+/* --------------------------------------------------------------------------
+   RESPONSIVE STYLES
+   -------------------------------------------------------------------------- */
+@media (min-width: 640px) {
+  .arena-hero-name {
+    font-size: clamp(3.5rem, 8vw, 5.5rem);
+  }
+
+  .arena-games-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .arena-shortcut-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .arena-header {
+    padding: 1rem 1.5rem;
+  }
+
+  .arena-hero {
+    padding: 0 1.5rem;
+  }
+
+  .arena-shortcut-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .arena-games-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .arena-games-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SAFE AREA / NOTCH SUPPORT
+   -------------------------------------------------------------------------- */
+@supports (padding-top: env(safe-area-inset-top)) {
+  .arena-header {
+    padding-top: max(0.75rem, env(safe-area-inset-top));
+  }
+}
+
+/* --------------------------------------------------------------------------
+   SCROLLBAR STYLING
+   -------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--bio-bg));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--brand-soft));
+}
+
+/* --------------------------------------------------------------------------
+   SELECTION STYLING
+   -------------------------------------------------------------------------- */
+::selection {
+  background: hsl(var(--brand) / 0.3);
+  color: hsl(var(--brand-foreground));
+}
+
+/* --------------------------------------------------------------------------
+   FOCUS VISIBLE
+   -------------------------------------------------------------------------- */
+:focus-visible {
+  outline: 2px solid hsl(var(--brand));
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+/* --------------------------------------------------------------------------
+   ANIMATION UTILITY CLASSES
+   -------------------------------------------------------------------------- */
+.animate-fade-in {
+  animation: enter 0.5s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: enter 0.5s ease-out forwards;
+  --tw-enter-translate-y: 20px;
+}
+
+.animate-pulse-glow {
+  animation: bio-profile-glow 2s ease-in-out infinite;
+}
+
+.stagger-1 { animation-delay: 0.05s; }
+.stagger-2 { animation-delay: 0.1s; }
+.stagger-3 { animation-delay: 0.15s; }
+.stagger-4 { animation-delay: 0.2s; }
+.stagger-5 { animation-delay: 0.25s; }
+.stagger-6 { animation-delay: 0.3s; }

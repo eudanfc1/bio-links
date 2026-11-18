@@ -1,0 +1,2412 @@
+{
+  "profiles": [
+    {
+      "id": "demo-profile",
+      "slug": "levivrog",
+      "name": "Levivrog",
+      "handle": "levivrog",
+      "motto": "Só quem se arrisca conta",
+      "bio": "Todos os meus links em um só lugar.",
+      "avatarUrl": "/assets/profile/alissonvr4u/avatar.jpg?v=1794902518469",
+      "coverUrl": "/assets/profile/alissonvr4u/cover.png?v=1794929957394",
+      "platform": "https://exemplo.com/plataforma",
+      "platformLabel": "JOGUE AQUI ",
+      "whatsapp": "https://wa.me/5500000000000",
+      "instagram": "https://www.instagram.com/levivrog",
+      "telegram": "https://t.me/exemplo",
+      "gamesUrl": "",
+      "supportUrl": "85999286481",
+      "verified": true,
+      "theme": {
+        "accent": "#0B5394",
+        "accentBright": "#1685da",
+        "accentAlt": "#0b0b0c",
+        "onAccent": "#ffffff",
+        "bg": "#89CFF0",
+        "surface": "#161618",
+        "text": "#f5f7f3",
+        "name": "#08304D",
+        "muted": "#8c9785",
+        "border": "#4a4a50",
+        "platform2": null,
+        "platform3": null,
+        "platform4": null,
+        "platform5": null,
+        "vip": null,
+        "telegram": null
+      },
+      "createdAt": "2026-11-16T20:59:45.978Z",
+      "updatedAt": "2026-11-17T23:31:06.216Z",
+      "backgroundUrl": "/assets/profile/alissonvr4u/background.jpg?v=1794929940202",
+      "partnerName": "grupo wb",
+      "partnerLogoUrl": "/assets/profile/alissonvr4u/partner.png?v=1794933005739"
+    }
+  ],
+  "links": [
+    {
+      "id": "link-1",
+      "profileId": "demo-profile",
+      "label": "Minha plataforma",
+      "url": "https://exemplo.com/plataforma",
+      "kind": "platform",
+      "icon": "play",
+      "position": 1,
+      "active": true,
+      "backgroundUrl": "/assets/profile/alissonvr4u/link-bg-link-1.png?v=1794946677095"
+    },
+    {
+      "id": "link-2",
+      "profileId": "demo-profile",
+      "label": "Instagram",
+      "url": "https://instagram.com/exemplo",
+      "kind": "social",
+      "icon": "/assets/profile/alissonvr4u/instagram.png?v=1794945134305",
+      "backgroundUrl": "/assets/profile/alissonvr4u/instagram-bg.jpg?v=1794945642544",
+      "position": 1,
+      "active": true
+    },
+    {
+      "id": "link-3",
+      "profileId": "demo-profile",
+      "label": "WhatsApp",
+      "url": "https://wa.me/5500000000000",
+      "kind": "social",
+      "icon": "/assets/profile/alissonvr4u/whatsapp.png?v=1794945888894",
+      "backgroundUrl": "/assets/profile/alissonvr4u/whatsapp-bg.jpg?v=1794945888894",
+      "position": 2,
+      "active": true
+    },
+    {
+      "id": "link-4",
+      "profileId": "demo-profile",
+      "label": "Telegram",
+      "url": "https://t.me/exemplo",
+      "kind": "social",
+      "icon": "/assets/profile/alissonvr4u/telegram.png?v=1794946110065",
+      "backgroundUrl": "/assets/profile/alissonvr4u/telegram-bg.jpg?v=1794946110065",
+      "position": 3,
+      "active": true
+    }
+  ],
+  "partners": [
+    {
+      "id": "mwlbh5pp-68ity88",
+      "profileId": "demo-profile",
+      "name": "grupo wb",
+      "logoUrl": "/assets/profile/alissonvr4u/partner.png?v=1794933005739",
+      "url": "https://exemplo.com/plataforma",
+      "label": "JOGUE AQUI",
+      "position": 0,
+      "active": true
+    }
+  ],
+  "stories": [],
+  "notices": [
+    {
+      "id": "notice-1",
+      "profileId": "demo-profile",
+      "kicker": "AVISO",
+      "text": "Bônus especial liberado por tempo limitado.",
+      "url": "https://exemplo.com/plataforma",
+      "endsAt": "2026-11-18T20:59:45.978Z",
+      "active": true
+    }
+  ],
+  "clicks": [
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "instagram",
+      "createdAt": "2026-11-16T21:00:01.639Z",
+      "referrer": "",
+      "userAgent": "curl/8.19.0",
+      "id": "d3f3445c-03ba-4d4d-8353-6f25c6e03990"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-16T21:07:01.328Z",
+      "referrer": "http://192.168.0.6:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "d9572fc4-77b7-414a-85c6-21d22137d1ef"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "test",
+      "createdAt": "2026-11-16T22:05:20.016Z",
+      "referrer": "",
+      "userAgent": "curl/8.19.0",
+      "id": "1353f74d-137e-4d9f-9f66-ea60798404c1"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T00:11:39.502Z",
+      "referrer": "http://localhost:3002/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "id": "301805fb-9c07-4444-bd6b-24240675b755"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T00:13:59.524Z",
+      "referrer": "http://localhost:3002/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "id": "4bbe6aca-3cff-4192-8352-e22a5f38277d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T00:25:49.205Z",
+      "referrer": "http://localhost:3002/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "id": "ea870ca1-0c1d-43bf-a083-27464e4a18e4"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T00:35:56.394Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "id": "5a82474c-f676-4968-85f5-41308a01dc68"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T00:46:45.518Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "5f396239-c4b1-44fb-9300-e7d919c99b82"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T00:59:16.546Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "id": "a77383db-5dac-4124-9858-7b0fda68f863"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T01:12:19.855Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "0d50cbd2-93fc-4081-a76b-ac3d96eb2197"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T01:31:09.020Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "6f11587a-fb07-4501-98ce-caa32d01d668"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T01:31:46.628Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "id": "b43219e2-5698-4e72-b523-8e3a5b072c9a"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T01:50:35.829Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "id": "1c3b532c-7778-4b45-8da6-b12023dc6766"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T01:54:30.730Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "id": "0197b2d9-118e-4c97-b2a3-75785dde6cd5"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T01:58:19.321Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+      "id": "6e1597e5-67b9-4fde-80de-296e890d6091"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T05:44:22.904Z",
+      "referrer": "http://192.168.0.6:3006/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "b2b5dbb5-6b93-4976-a5e7-010fc930fba7"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T05:54:09.727Z",
+      "referrer": "http://localhost:3008/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "6a9f0f9d-2366-497a-8179-98c42988204a"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T06:38:38.638Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "1f0fdd06-ceaa-4504-956f-38c70a9aed4d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": "link-1",
+      "target": "link-1",
+      "createdAt": "2026-11-17T06:38:43.583Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "83983197-f9e1-417c-8f57-1b8369ca6a52"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": "link-1",
+      "target": "link-1",
+      "createdAt": "2026-11-17T06:44:21.802Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "6feddcc7-9f29-49c2-a7c5-d37c03a9e687"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": "link-1",
+      "target": "link-1",
+      "createdAt": "2026-11-17T06:45:39.090Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "6da870eb-6512-4a4b-b0be-5df8d8c6f172"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:26:02.147Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "a4c2906b-b790-470f-b87b-05b9efff21d0"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:26:14.366Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "d2d7ea34-2bf2-4364-a2cd-0ec41c6809b8"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:29:32.793Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "2f6bdd3c-8764-4127-b853-79a56425693a"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:30:37.086Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "8da35534-12ab-4011-b823-cceb3e713194"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:31:13.093Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "c698b953-c4b9-4a05-983e-192d79d58a15"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:33:08.779Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "133549b9-88e6-4e65-9a25-69afcf866b37"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:33:14.253Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "3acb9387-052a-4cc3-8784-bae9eee1f773"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:33:20.401Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "031c303a-5d8e-44d8-90e5-410d15a3a014"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:35:18.086Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "6dfa97ff-741e-4e09-a040-f24aab527e3a"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:35:31.018Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "686d97ad-7605-4b1a-a7f6-ee0dd8fc7ac4"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:35:58.321Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "259237f9-dd79-47a9-b448-ec981d83d2cb"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:37:03.285Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "a78faf11-1b8a-4a5c-a8e1-5b273f76782b"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:38:03.554Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "3e8598fe-059c-488b-9555-ed67123af38a"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:38:27.390Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "1fceb832-34e2-4894-a842-baf041652756"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:41:40.341Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "bd80bbb6-21f3-4678-9c97-fcaf22885305"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:41:51.224Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "a4a48802-fe57-47e6-9395-f36ea704970a"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:56:44.300Z",
+      "referrer": "http://localhost:3019/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "6efe1938-603e-4690-880f-3bc05b8bc5b6"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T07:57:04.455Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "6841e209-fa97-4f4a-a267-da7119258367"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T08:03:12.092Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "b85e50f7-50bb-4fa9-8009-5510a43fcd20"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T08:05:36.019Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "fe768bed-35d8-4ab0-a4e3-ede0483d02b2"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T08:08:23.236Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "9f3782bd-2212-4d4e-aa11-b53c5600dd5c"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T08:08:51.835Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "c2b13dda-4503-4578-ab6c-f694f746d37c"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T08:12:02.521Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "9471ef41-b67b-4dcb-8a3d-3f75d41c078f"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T08:12:56.642Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "2ba221b2-4c65-4fbc-a531-4ac44e06990b"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T08:14:19.763Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "0125ee72-3ea9-42a6-99de-a4e4155ebbb8"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T08:16:23.385Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "bc7e5973-721d-4e0b-968e-16e887507882"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T08:25:14.369Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "5cd38f16-3048-4231-afd8-a8ae0c3aeecc"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T08:25:50.915Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "168daf5c-c624-4e74-a507-6a47deb23f52"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T08:26:00.639Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "4797236a-915a-47e7-9d30-86e1ba2e7571"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T08:28:33.957Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "60df95a4-97a1-41fe-98a3-b4ba8b1a4f96"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T08:28:52.692Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "5569f6f8-bf74-456d-9bbd-bc1e5c43f04d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T08:28:57.642Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "bf1897a5-d659-49d4-b33d-5b1657692dd2"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T08:30:49.872Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "e15d2860-1933-429a-8217-767ef67f0672"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T08:58:12.002Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "63cfc0cf-9ef1-4138-a2ef-943f09a008ef"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T08:58:56.965Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "95d42120-69a1-4bb2-b430-5d6d1839fe2b"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T11:35:53.503Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "ebd3cd15-142a-450f-b75d-998eb15ebe58"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T11:36:25.403Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "d05686dc-5d12-425b-b017-85b58ecb7f73"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T11:37:14.788Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "a8541767-f122-4b39-ab18-5b757456874d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T11:39:03.457Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "3b7536ca-572d-4e85-a190-2cdac6e980b8"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T11:39:36.307Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "054a7ae4-bff0-4875-b742-464f228c4173"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T11:39:53.556Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "e2ff373b-e96d-404b-b1c5-8229480566e4"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T11:40:05.195Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "6674e32a-61fa-4d69-b8fa-7065425f8b47"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T11:41:06.987Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "6b9cb0ee-51f1-48de-b51d-4c16e827eba6"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T12:49:47.110Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "fae328e6-045f-4b6e-9757-18e04fda6b18"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T12:50:00.846Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "d2c04852-7273-4ec8-b7bd-842a64537c1c"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T12:50:13.629Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "d92f611d-60d2-4195-a91d-fd2f68c64189"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T12:52:39.867Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "eb3bad66-7c88-436b-99da-34116a6ef25e"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T12:53:05.954Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "aa2ec40d-1da1-4c5b-9644-e7460ee079d5"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T12:53:25.319Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "ae2aaa35-83d1-44e5-a026-d7c02f6574f5"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T12:53:37.182Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "69ae4660-a232-4739-ab51-f035dcc5998e"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T12:53:49.801Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "5e6fbb3f-5159-4456-a8e8-aedd0f449745"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T12:54:58.761Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "ed867e5c-a6e5-4a91-a70b-f943489d9e4e"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T12:55:10.035Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "81c1fc51-bc13-482e-9e68-05743682ce05"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T12:55:30.709Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "a428cdf2-5d3d-4d77-b65e-b083b62fbf50"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T12:55:42.853Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "341b22fe-2fdd-4122-9912-916a0f64a834"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T12:57:22.446Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "ec25bba0-fb05-44ef-afb4-cca1785476e7"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T13:05:54.797Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "0b85d4b0-b0e9-400a-8362-2757b514d8eb"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T13:06:09.722Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "e28c0c60-8e28-45f5-bf7c-8c9deeb25273"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T13:06:43.842Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "d5044291-eb69-4f89-b847-9030b9cfcd21"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T13:07:55.952Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "c2bdc71f-474f-4604-b4b9-f82dfcbe153d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T13:08:30.081Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "98896f70-5961-44df-b96b-c4c437ab2946"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T13:08:59.726Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "70bbb78c-111a-441a-b311-a2c4e19a3324"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T13:11:40.745Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "2e86a20f-23c7-4bdf-b164-eb965c93558f"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T13:11:49.967Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "c2ab63b4-6037-4b7f-86de-7bd9d44afb0d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T13:12:57.013Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "1621f284-75ae-4bfe-a83d-fc3e8b616a09"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T13:13:48.342Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "c8752e46-d2e3-49a6-8fc3-9b182a42b7bf"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T13:14:20.485Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "3db6cdd2-831c-483b-b4ba-b9a09b42426d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T13:15:16.469Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "16c0a9a3-12ce-40bd-b107-8d40ccb48dc6"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T13:19:36.802Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "9717f22c-d772-4116-ba5e-4aec51502478"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T13:23:30.222Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "d764804c-5426-43dd-89c2-1686788635df"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T13:30:10.832Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "ea8a4f3f-4c60-4d88-8203-42396ab09ad1"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T13:30:23.085Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "a53fd9a4-59db-4f8d-a357-80e38bee4790"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T13:38:15.174Z",
+      "referrer": "http://localhost:3000/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "d049ce92-32fe-4ae7-9384-1cd4c8e051e8"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:25:36.722Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "ddc7f17d-dff2-468d-8b80-bf6bf8bd99eb"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:38:42.906Z",
+      "referrer": "http://localhost:3002/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "c766aa23-c8be-44c2-83ff-ac81bbeed97f"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:39:32.480Z",
+      "referrer": "http://localhost:3002/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "aa7f4ca3-e490-4464-97b7-c9584ccfcf58"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:40:11.715Z",
+      "referrer": "http://localhost:3002/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "d57cac52-a461-4236-9cfd-89159fcbde04"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:42:14.915Z",
+      "referrer": "http://localhost:3002/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "be32369d-108f-4e40-b705-0a651519da97"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:44:22.166Z",
+      "referrer": "http://localhost:3002/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "6e28dc79-3d55-4c5e-a2bb-35c2df54377d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:44:57.623Z",
+      "referrer": "http://localhost:3002/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "953ee522-b910-4be5-82fe-edd21d02eaa7"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:45:55.698Z",
+      "referrer": "http://localhost:3002/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "9201b617-7a70-4134-9073-7886aa055964"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:46:34.552Z",
+      "referrer": "http://localhost:3002/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "06afdb8a-e8f4-4fe9-8306-e17254ba6efc"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:46:50.900Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "7a93d6c7-d6a9-4f7f-a2ea-8ac8c55903e1"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:49:02.906Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "3379852e-9848-498f-8a2a-1336b14e48a5"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:49:53.821Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "8a2524e2-6980-4180-a008-31cc559043bb"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:50:31.005Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "e4a1cb37-49ac-4b44-8492-ff17c5ce389d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:54:54.807Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "1bd8f161-0504-4517-b0fd-72047258ae6d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:55:48.725Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "e4ef08fe-f780-4f18-8f52-755c9108333c"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:57:46.048Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "01337cc7-7718-4633-9498-e5e039573d64"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:58:51.346Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "a2c2ab23-25ec-4977-b3a6-aea02b7a6964"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:59:11.105Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "6fbfb41a-7249-406c-bbe8-b06863e1f4f4"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T14:59:43.799Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "70472fb6-8258-4b12-a505-658a59e30b5e"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:05:28.625Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "31ab66bf-8f81-44b4-bb3e-a2947910488d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:08:34.319Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "0fe1b189-a8a1-471e-8423-90c0c21043a2"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:10:38.685Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "d016344f-7544-48ef-9e8b-39f97d125f56"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:11:30.718Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "9b8e20a6-4ffd-4b14-baef-c63834de77dc"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:12:22.043Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "dc41e95d-114b-4dc9-b65f-a4d81225b18b"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:13:55.073Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "dd3d27bf-f3b9-43f1-a0c4-dc0f038ffd7e"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:14:04.246Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "6b002c3a-d5ad-4839-b45b-51125522ecb9"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:14:29.862Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "aea543d6-880b-4004-9b99-2b2da9be47e8"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:18:59.044Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "1435208b-e063-4807-8a95-132bb878fcea"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:20:08.547Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "28a15f14-6136-4d43-a1cd-8da487346dc4"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:23:14.556Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "61827fdd-75fc-4993-8c27-07875ecabe3e"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:25:51.024Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "f5ac0153-c16a-455d-8494-162719a24ee7"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:26:18.709Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "30cacd62-0efa-484e-b9f5-0c3fdfeed8ea"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:27:01.463Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "c1a0a357-326c-41f3-bd6a-5b56e4c3f69d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:29:27.290Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "b90a6919-8303-4155-a6a1-2d47a38af9a4"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:30:05.334Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "a376f564-264c-4faa-9930-68b93abf7f65"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:30:38.569Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "b4cd1e26-2b55-454b-b94b-b76bd96d712c"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:31:53.119Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "5e0ba445-12d5-4f35-aca3-e1af0ecc5420"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:36:57.712Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "c8c6090f-6dbc-4d2a-bb1f-be32b92b5780"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:37:32.719Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "d49ce85e-fdc6-4d61-b9ea-095f97350e50"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:38:07.913Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "16ca839f-46c5-431c-a9fc-77f8611b97af"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:38:48.807Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "55dcc194-402d-47e8-8afe-b59a900e4b06"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:39:08.877Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "0d87f182-0c63-4b04-bda7-b77ab831e445"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:39:24.420Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "193b9fcc-be75-4fb8-9fce-f10ac88fb742"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:41:13.313Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "4cd66d20-75fa-42e0-8d0e-7afdbce109d5"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:42:16.766Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "3e5a8a4b-0acf-4407-bd83-7aa0ffd25b08"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:44:04.267Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "1f9d45c9-fde5-42c4-baed-c68dc762f28a"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:44:39.291Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "9d232d79-4b26-4ac7-88f4-fe83d73824a2"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:45:40.701Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "ae92cf69-50f2-45d4-a27c-57c264fbf042"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:45:50.394Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "cd56a107-66b2-4167-9234-1474991ed89d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:48:50.030Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "9dc3e1fb-8979-4821-b130-4b253805a35a"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:50:36.417Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "3f6a4133-a2db-4d90-b54b-5ad2422f5dc4"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:51:54.612Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "d0f40759-c6b8-4d24-9a9c-3d739422147b"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:52:13.759Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "0a0b0b69-da62-4df1-a014-4a13a9d07de7"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:53:12.801Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "9399c909-f676-4ed0-a14d-c2d8fbf8506a"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:53:43.754Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "4c733f1c-e056-4762-850c-bd801c176894"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:56:51.236Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "5e14f01b-bd8c-4202-8cdb-dfba1c05bf37"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:57:25.436Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "8456eaa7-15df-43c9-bcc4-0f3e735e200d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T15:58:08.267Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "52e909d4-2b71-44c2-9983-dc75ed4b459d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:00:09.977Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "57c41520-8570-4c19-962f-b25f2e8ac9c5"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:01:08.667Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "dfdc7cb3-68d7-4de3-be3c-63d7b52ceb72"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:02:39.675Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "caf38d8b-4884-42bd-a0d0-c637cedf4167"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:03:06.622Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "8125f754-70c6-4ee7-a2b7-b833b17a719d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:04:20.623Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "8bbf938f-a3a4-4fc8-a233-b5f686539c72"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:04:39.224Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "c1437413-e1ef-4075-8dcb-fa6ef0e3912d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:06:01.736Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "6b43965d-1232-4385-bde0-4a4fa8e72863"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": "link-3",
+      "target": "link-3",
+      "createdAt": "2026-11-17T16:07:08.750Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "2d93ca58-0a29-4434-a5d9-a858db8c0348"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:07:17.093Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "786a3d02-1ff6-45a2-954d-350968ed2e84"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:07:54.331Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "70407b38-4141-457f-8432-1367db83c3b5"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:09:11.104Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "4062c755-286f-47a4-aa37-c4040e08e880"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:09:35.518Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "7b066ace-8997-4f24-8fbf-3b20841d42bc"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:10:17.570Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "f4196de6-4477-4ea3-8c0e-9974de7a8041"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:11:29.960Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "dc06d38b-1cea-4151-bbf1-fa8840b2903b"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:14:56.413Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "f87a367b-62ae-4bcc-82f4-4222e02e49de"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": "link-2",
+      "target": "link-2",
+      "createdAt": "2026-11-17T16:14:56.726Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "53e5cd24-a7dc-4043-954d-4f23b6e7ec3d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:22:52.907Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "7e0cb273-ce30-445a-847b-bcef6f896693"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:24:06.154Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "d9cd6bde-5373-43e6-a775-421b218633ba"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:24:58.157Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "f0b3b513-ec74-44da-b008-0f84148f7bc1"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:27:38.742Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "id": "8c3bda78-8ecd-4e4e-b558-59b47fca9976"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:27:50.437Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "629febd0-747b-4abe-a5d7-c0ab699cda9f"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:27:54.564Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "0a714ff6-7d36-48c7-917e-3c3cfee1f813"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:30:23.084Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "2d9fadf7-23af-4361-9388-ae91ac26208a"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:31:50.448Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "823755b5-0a13-4dea-bcb6-bb987a0193bc"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:33:57.797Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "e2315e7d-d782-4a32-afbc-5a4a5a91b3ba"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:36:45.598Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "b3b9ec6a-caea-4e4c-8600-2f0ea5982363"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T16:41:59.148Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "e4655aeb-b68c-4416-998d-6b7e1db5e088"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T18:35:46.537Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "704b729f-91ea-465e-80a7-9449792ca919"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T18:36:49.002Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "29e4fdd2-5b9c-4c8f-90ca-5a702ef7d9a7"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T18:37:00.948Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "2edb75c7-837d-4423-b26b-c50c5ec7bd09"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T18:37:20.046Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "a06614d2-964b-413a-b3e3-50624a0bf52f"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T19:32:11.408Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "6b5183af-5589-414d-b46e-dafed67b1e30"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T19:38:48.257Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "68f6f89b-9cd3-4edc-9657-04a720470104"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T19:43:23.869Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "f70a8f7e-10eb-4177-82f9-500cdf6f858f"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T19:49:48.414Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "f2b699a4-e474-472e-93a1-fd3ab708980e"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T19:52:52.886Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "7e55943d-ebe9-49e1-8c18-270f774cb8b1"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T19:55:18.527Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "bb5fd8ac-8d56-41ce-aa92-aec6b7f9ebd8"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T19:56:43.873Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "654f6e87-afa3-49cb-a5cb-74bdbd1d2fdb"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T19:57:22.780Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "a696e7a0-bbe4-4bee-a968-47650c901caf"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T19:59:57.169Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "c8b2e723-26d9-48c3-848f-46a1ae16c5af"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:02:23.453Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "3b52448c-e738-4ac3-afc2-2e48402198bb"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:05:29.970Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "8adc35e7-397d-4876-843d-905bffdf8d17"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:09:05.182Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "937a38eb-3c65-422f-89f5-f8649bf1a113"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:14:45.201Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "a16d4bdd-5de6-4748-9b99-cf8391a49cb9"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:15:42.698Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "29f943df-ab66-42e3-84f2-1421ef7d7f57"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:18:13.586Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "10417716-e032-4771-9e99-9a31db001483"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": "link-1",
+      "target": "destino:platform",
+      "createdAt": "2026-11-17T20:18:14.248Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "02480c91-298d-4507-b866-afa55e421ba9"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:23:11.705Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "6748999f-9783-4130-8c63-a4bd4c445ca5"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:24:48.656Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "c98a276d-7517-4734-82b1-95d677b6ed30"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": "link-4",
+      "target": "link-4",
+      "createdAt": "2026-11-17T20:24:49.991Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "4ea5d1bb-9e5d-4713-9628-00e38f20b4d4"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:26:03.048Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "0df85b23-03a0-4509-8132-2c244f870eca"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:26:09.032Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "96f1501f-8689-457b-8caf-2aeb6ec66353"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": "link-2",
+      "target": "destino:social",
+      "createdAt": "2026-11-17T20:26:24.296Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "76d0b5b7-4c94-43db-b124-4549f4ef3c2b"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:30:33.235Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "35295a0c-c5e9-4bee-a616-b95b4240e90a"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:31:37.725Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "b9f97073-b444-47d0-bcfc-814ef6951b00"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:35:08.883Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "2896fc39-baa8-4c39-a87b-d0b36106f735"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:38:22.722Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "1eb16759-6502-4766-ac33-3255b8a8a98d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:41:32.528Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "ccb68d15-6b85-411b-b5b6-47b958cbb006"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:49:42.170Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "31d4c49c-3439-4e08-99ab-5d607eb71c4c"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:50:21.363Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "414cdd9f-0460-4b4c-b9a6-878f1ec314d0"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T20:52:24.009Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "7cbf5c52-58cc-4ca3-960d-d1cfbd20b18d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:06:46.640Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "55288507-bf5e-401e-9a3a-9c609837ec7c"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:09:38.051Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "19c26da3-b7cf-4f90-a618-4b599cc35a84"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:09:49.636Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "03845b61-e7cc-4541-ac44-9418f3b75626"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:11:00.087Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "0bb1c232-f5ac-4947-ac70-fe916c4499c3"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:15:46.549Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "014edc27-8274-40e8-aa1c-c5429afa489c"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:16:52.411Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "3d348011-9347-4e49-b393-2410b55b1225"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:18:24.728Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "539cdc61-9ec1-41ab-8ec4-0bfb031b80c7"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:30:36.574Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "e7dd2074-1528-4e1f-8f87-744d6f5909b9"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:31:41.515Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "55bab36e-480c-4da3-8689-cad26d6ef30f"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": "link-3",
+      "target": "destino:social",
+      "createdAt": "2026-11-17T21:33:37.755Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "5f6efbc4-e793-4594-aa1e-0b5d9b641775"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:35:11.516Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "1ba87451-373e-4a87-af40-a088f7b837ee"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:35:47.964Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "65f8b002-48a6-480b-827a-3fab1083cf90"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:36:55.750Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "c81ff87e-3ba1-43c1-ab87-d68056eccdee"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:41:02.169Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "8c5e8ad7-0e62-4610-891d-44317da2f426"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:42:28.478Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "b1caf645-4a47-4190-83e4-0abb182f816f"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:43:21.923Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "5e8cddc5-b71f-4cd0-86fc-87c8aad31dc6"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:44:24.551Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "32e498a5-721f-4f5e-99e1-e152c6f7305d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:44:45.870Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "5a18e3e1-3834-4820-94f8-69d2b3f69001"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:45:50.889Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "2f08621d-6bfd-4bb1-a5c5-ff5210d4bcef"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:46:42.337Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "0769b032-2d6b-491d-bc6f-f51b65b0b33b"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:50:25.891Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "b48fe256-ab27-4669-94f0-daf7565f4d4a"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:54:22.877Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "10da6b08-a97a-4063-a5b4-f7567c85641d"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T21:55:41.078Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "3d36e8bb-b2c7-4ebf-9a76-913e5b0ed6db"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T22:06:18.201Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "656d09c2-3c42-40a4-847e-e16826ed839f"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:12:25.323Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "250918fc-0c0c-41d7-9306-0713619328c5"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:13:35.766Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "86ec6e64-bffa-4b78-9cf3-cff1aa42892f"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:13:59.048Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "e75e15eb-c5f8-4a0f-ba70-1f5bdbcee1b3"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:14:22.275Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "c0cdeda8-9da0-4b24-9269-cd5d9a6f3601"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:14:51.124Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "1aef46f0-7202-4027-b81d-759bd5d8be71"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:15:02.673Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "b37a3936-451a-4e84-bdf3-81aa0cf7d94a"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:15:21.757Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "eb6828dd-c5b4-48de-91c4-f5dcff849efb"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:15:43.016Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "da1efd78-b64c-4def-8b42-5c281e2b93c5"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:15:59.070Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "c0a6adff-55d1-4cc0-9178-0357d3435059"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:16:19.532Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "e4e0ec8b-414c-4d9c-b13d-021ebb8d8e17"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:17:13.813Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "b6602267-1cb0-44f7-8faf-271de7f16800"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:17:47.406Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "f6b6dd11-ba41-43d2-ad4b-6bd2513a6308"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:18:41.478Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "a9d01ad5-67e7-4ffa-8682-b23de977c7fa"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:20:11.028Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "5a69cba2-2e1b-4739-bd6d-72cae108dd43"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:22:43.505Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "e4ab084d-1b9d-4f31-b53b-090ce96e92ec"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:24:36.093Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "67190ccf-a0ea-4358-b3e9-81caf3b7ff8a"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:25:45.430Z",
+      "referrer": "http://localhost:3001/p/alissonvr4u",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "caca9eb1-c00b-40cc-bb64-a76dbb2535e3"
+    },
+    {
+      "profileId": "demo-profile",
+      "linkId": null,
+      "target": "gate",
+      "createdAt": "2026-11-17T23:32:04.052Z",
+      "referrer": "http://localhost:3001/p/levivrog",
+      "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+      "id": "f8dc4796-8ae5-48ec-92ba-cb7ea42efef0"
+    }
+  ]
+}

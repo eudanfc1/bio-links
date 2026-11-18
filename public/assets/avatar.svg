@@ -1,0 +1,6 @@
+# Avatar padrão (SVG)
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#101410"/>
+  <circle cx="100" cy="76" r="32" fill="#22c55e" opacity=".8"/>
+  <ellipse cx="100" cy="150" rx="58" ry="36" fill="#22c55e" opacity=".45"/>
+</svg>
