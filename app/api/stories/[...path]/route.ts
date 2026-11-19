@@ -30,6 +30,11 @@ export async function GET(
   if (profile) {
     const story = (await listStories(profile.id)).find((s) => s.id === storyId);
     const url = story?.mediaUrl ?? '';
+
+    // Mídia hospedada fora (ex.: Supabase Storage): redireciona para a URL pública.
+    if (/^https?:\/\//i.test(url)) {
+      return NextResponse.redirect(url, 307);
+    }
     if (url.startsWith('/') && !url.includes('..')) {
       const local = join(process.cwd(), 'public', url.replace(/^\//, ''));
       try {
