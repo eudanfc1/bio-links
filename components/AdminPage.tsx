@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
+import { createClient } from '@supabase/supabase-js';
 
 import type { Notice, Partner, Profile, ProfileLink, Story, Theme, ClickSummary } from '@/lib/types';
 import { defaultTheme } from '@/lib/theme';
@@ -814,16 +815,37 @@ function StoryCard({
 
   const handleFile = async (file: File | undefined) => {
     if (!file) return;
-    setUploading(true);
     setUploadErr(null);
+
+    const MAX_BYTES = 50 * 1024 * 1024; // limite do plano grátis do Supabase
+    const EXT: Record<string, string> = {
+      'video/mp4': 'mp4', 'video/webm': 'webm', 'video/quicktime': 'mov',
+      'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp', 'image/gif': 'gif',
+    };
+    const ext = EXT[file.type];
+    if (!ext) { setUploadErr('Formato não suportado. Use MP4, WebM, MOV, JPG, PNG ou WebP.'); return; }
+    if (file.size > MAX_BYTES) { setUploadErr('Arquivo muito grande (máximo 50 MB).'); return; }
+
+    const supaUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const supaKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+    if (!supaUrl || !supaKey) { setUploadErr('Supabase não configurado.'); return; }
+
+    setUploading(true);
     try {
-      const fd = new FormData();
-      fd.append('file', file);
-      fd.append('slug', slug);
-      const res = await fetch('/api/upload-story', { method: 'POST', body: fd });
-      const data = await res.json().catch(() => ({}));
-      if (!res.ok) { setUploadErr(data.error ?? 'Erro ao enviar.'); return; }
-      patch({ mediaUrl: data.url, mediaType: data.mediaType });
+      // Envia direto do navegador para o Supabase Storage (não passa pela Vercel,
+      // que limita o corpo da requisição a ~4,5 MB).
+      const supabase = createClient(supaUrl, supaKey);
+      const path = `stories/${slug}/${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;
+      const { error } = await supabase.storage
+        .from('media')
+        .upload(path, file, { contentType: file.type, upsert: false });
+      if (error) { setUploadErr(error.message || 'Erro ao enviar.'); return; }
+
+      const { data } = supabase.storage.from('media').getPublicUrl(path);
+      patch({
+        mediaUrl: data.publicUrl,
+        mediaType: file.type.startsWith('video/') ? 'video' : 'image',
+      });
     } catch {
       setUploadErr('Falha de rede.');
     } finally {
@@ -876,7 +898,7 @@ function StoryCard({
             onChange={(e) => handleFile(e.target.files?.[0])}
           />
           <span style={{ fontSize: 10, color: '#5a615c', marginTop: 4, display: 'block' }}>
-            Aceita MP4, WebM, MOV (até 2 min) e imagens JPG/PNG/WebP. Máximo 100 MB.
+            Aceita MP4, WebM, MOV e imagens JPG/PNG/WebP. Máximo 50 MB.
           </span>
         </div>
 
