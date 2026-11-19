@@ -440,6 +440,19 @@ export default function ProfilePage({ bundle, slug }: Props) {
                   onClick={() => track(`parceiro:${partner.id}`, partner.id)}
                   className="arena-shortcut glass-card neon-btn neon-border relative flex h-full min-h-32 flex-col items-start gap-3 rounded-md p-4 glow-brand"
                 >
+                  {partner.backgroundUrl && (
+                    <>
+                      <span
+                        aria-hidden="true"
+                        className="pointer-events-none absolute inset-0 rounded-[inherit] bg-cover bg-center"
+                        style={{ backgroundImage: `url("${partner.backgroundUrl}")` }}
+                      />
+                      <span
+                        aria-hidden="true"
+                        className="pointer-events-none absolute inset-0 rounded-[inherit] bg-gradient-to-b from-black/20 via-black/40 to-black/75"
+                      />
+                    </>
+                  )}
                   <span aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden rounded-[inherit]" />
                   <div className="relative z-10 flex w-full justify-between">
                     <span className="arena-social-icon grid shrink-0 place-items-center rounded-md h-16 w-16">
