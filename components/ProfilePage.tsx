@@ -11,6 +11,7 @@ import Gate from './Gate';
 import GamesGrid from './GamesGrid';
 import Lightbox from './Lightbox';
 import { getIcon } from './icons';
+import StoryBar from './StoryBar';
 
 type Props = {
   bundle: ProfileBundle;
@@ -407,6 +408,22 @@ export default function ProfilePage({ bundle, slug }: Props) {
             </div>
           </section>
 
+          {/* ====== STORIES ====== */}
+          {activeStories.length > 0 && (
+            <section id="stories" className="mx-auto max-w-6xl scroll-mt-6">
+              <div className="mb-1 flex items-center gap-2 px-5 text-[10px] font-semibold uppercase text-muted-foreground @min-[600px]:px-8">
+                <span className="h-1 w-1 bg-brand" />
+                Stories
+              </div>
+              <StoryBar
+                stories={activeStories}
+                slug={slug}
+                avatarUrl={profile.avatarUrl}
+                handle={profile.handle}
+              />
+            </section>
+          )}
+
           {/* ====== DESTINOS DISPONÍVEIS ====== */}
           <section className="mx-auto max-w-6xl px-5 @min-[600px]:px-8">
             <div className="mb-4 flex items-center gap-2 text-[10px] font-semibold uppercase text-muted-foreground">
@@ -423,19 +440,6 @@ export default function ProfilePage({ bundle, slug }: Props) {
                   onClick={() => track(`parceiro:${partner.id}`, partner.id)}
                   className="arena-shortcut glass-card neon-btn neon-border relative flex h-full min-h-32 flex-col items-start gap-3 rounded-md p-4 glow-brand"
                 >
-                  {partner.backgroundUrl && (
-                    <>
-                      <span
-                        aria-hidden="true"
-                        className="pointer-events-none absolute inset-0 rounded-[inherit] bg-cover bg-center"
-                        style={{ backgroundImage: `url("${partner.backgroundUrl}")` }}
-                      />
-                      <span
-                        aria-hidden="true"
-                        className="pointer-events-none absolute inset-0 rounded-[inherit] bg-gradient-to-b from-black/20 via-black/40 to-black/75"
-                      />
-                    </>
-                  )}
                   <span aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden rounded-[inherit]" />
                   <div className="relative z-10 flex w-full justify-between">
                     <span className="arena-social-icon grid shrink-0 place-items-center rounded-md h-16 w-16">
@@ -610,15 +614,18 @@ export default function ProfilePage({ bundle, slug }: Props) {
               </a>
               <button
                 type="button"
-                onClick={() => rolarPara('vip')}
+                onClick={() => rolarPara('stories')}
                 className="flex flex-col items-center justify-center gap-1 px-4 py-2 h-14 text-[10px]"
               >
                 <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
-                  <circle cx="12" cy="12" r="1"/>
-                  <circle cx="19" cy="12" r="1"/>
-                  <circle cx="5" cy="12" r="1"/>
+                  <circle cx="12" cy="12" r="9"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <line x1="12" y1="2" x2="12" y2="4"/>
+                  <line x1="12" y1="20" x2="12" y2="22"/>
+                  <line x1="2" y1="12" x2="4" y2="12"/>
+                  <line x1="20" y1="12" x2="22" y2="12"/>
                 </svg>
-                Mais
+                Storys
               </button>
             </nav>
             <button
