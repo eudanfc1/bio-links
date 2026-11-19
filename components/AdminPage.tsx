@@ -29,7 +29,7 @@ function useAdmin() {
   }, []);
 
   const login = (pwd: string) => {
-    if (pwd === 'levi@2026') {
+    if (pwd === 'admin123') {
       sessionStorage.setItem('admin', '1');
       setAdmin(true);
       return true;
@@ -630,7 +630,6 @@ export default function AdminPage({ mode }: { mode: 'local' | 'supabase' }) {
                   <th>Logo URL</th>
                   <th>URL</th>
                   <th>Rótulo do botão</th>
-                  <th>Fundo</th>
                   <th>Ativo</th>
                   <th></th>
                 </tr>
@@ -646,15 +645,6 @@ export default function AdminPage({ mode }: { mode: 'local' | 'supabase' }) {
                     <td><input value={partner.logoUrl} onChange={(e) => doUpdatePartner({ ...partner, logoUrl: e.target.value })} style={{ width: 260, fontFamily: 'ui-monospace, monospace' }} /></td>
                     <td><input value={partner.url} onChange={(e) => doUpdatePartner({ ...partner, url: e.target.value })} style={{ width: 260, fontFamily: 'ui-monospace, monospace' }} /></td>
                     <td><input value={partner.label} onChange={(e) => doUpdatePartner({ ...partner, label: e.target.value })} style={{ width: 140 }} /></td>
-                    <td>
-                      <LinkBannerField
-                        slug={profile?.slug ?? ''}
-                        linkId={partner.id}
-                        prefix="partner-bg"
-                        value={partner.backgroundUrl || ''}
-                        onChange={(url) => doUpdatePartner({ ...partner, backgroundUrl: url || null })}
-                      />
-                    </td>
                     <td>
                       <input type="checkbox" checked={partner.active} onChange={(e) => doUpdatePartner({ ...partner, active: e.target.checked })} />
                     </td>
@@ -686,6 +676,7 @@ export default function AdminPage({ mode }: { mode: 'local' | 'supabase' }) {
                 key={story.id}
                 story={story}
                 stories={stories}
+                slug={currentSlug ?? ''}
                 onChange={(next) => { setStories(next); doUpdateStories(next); }}
                 onDelete={doDeleteStory}
               />
@@ -804,17 +795,41 @@ export default function AdminPage({ mode }: { mode: 'local' | 'supabase' }) {
  * do React ("change in the order of Hooks").
  */
 function StoryCard({
-  story, stories, onChange, onDelete,
+  story, stories, onChange, onDelete, slug,
 }: {
   story: Story;
   stories: Story[];
   onChange: (next: Story[]) => void;
   onDelete: (id: string) => void;
+  slug: string;
 }) {
   const [editing, setEditing] = useState(false);
+  const [uploading, setUploading] = useState(false);
+  const [uploadErr, setUploadErr] = useState<string | null>(null);
+  const fileRef = useRef<HTMLInputElement>(null);
 
   const patch = (p: Partial<Story>) => {
     onChange(stories.map((s) => (s.id === story.id ? { ...s, ...p } : s)));
+  };
+
+  const handleFile = async (file: File | undefined) => {
+    if (!file) return;
+    setUploading(true);
+    setUploadErr(null);
+    try {
+      const fd = new FormData();
+      fd.append('file', file);
+      fd.append('slug', slug);
+      const res = await fetch('/api/upload-story', { method: 'POST', body: fd });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) { setUploadErr(data.error ?? 'Erro ao enviar.'); return; }
+      patch({ mediaUrl: data.url, mediaType: data.mediaType });
+    } catch {
+      setUploadErr('Falha de rede.');
+    } finally {
+      setUploading(false);
+      if (fileRef.current) fileRef.current.value = '';
+    }
   };
 
   if (!editing) {
@@ -835,9 +850,42 @@ function StoryCard({
   return (
     <div className="story-card" style={{ gridColumn: '1 / -1' }}>
       <div className="card" style={{ margin: 0 }}>
+
+        {/* Upload de arquivo direto */}
+        <div className="field">
+          <label>📁 Enviar arquivo do PC / celular</label>
+          <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
+            <button
+              type="button"
+              className="btn btn-sm btn-primary"
+              onClick={() => fileRef.current?.click()}
+              disabled={uploading}
+            >
+              {uploading ? 'Enviando…' : '📤 Escolher arquivo'}
+            </button>
+            {story.mediaUrl && (
+              <span style={{ fontSize: 11, color: '#5a615c' }}>✅ Arquivo enviado</span>
+            )}
+            {uploadErr && <span style={{ fontSize: 11, color: '#ef4444' }}>{uploadErr}</span>}
+          </div>
+          <input
+            ref={fileRef}
+            type="file"
+            accept="video/mp4,video/webm,video/quicktime,image/jpeg,image/png,image/webp,image/gif"
+            hidden
+            onChange={(e) => handleFile(e.target.files?.[0])}
+          />
+          <span style={{ fontSize: 10, color: '#5a615c', marginTop: 4, display: 'block' }}>
+            Aceita MP4, WebM, MOV (até 2 min) e imagens JPG/PNG/WebP. Máximo 100 MB.
+          </span>
+        </div>
+
+        <div style={{ borderTop: '1px solid #1e2a20', margin: '8px 0', opacity: 0.5 }} />
+
+        {/* Ou URL manual */}
         <div className="field-row">
           <div className="field">
-            <label>URL da mídia</label>
+            <label>Ou cole uma URL</label>
             <input value={story.mediaUrl} onChange={(e) => patch({ mediaUrl: e.target.value })} placeholder="https://..." />
           </div>
           <div className="field">
@@ -868,14 +916,12 @@ function StoryCard({
  * `link-bg:<id>`, então cada link tem seu próprio arquivo no servidor.
  */
 function LinkBannerField({
-  slug, linkId, value, onChange, prefix = 'link-bg',
+  slug, linkId, value, onChange,
 }: {
   slug: string;
   linkId: string;
   value: string;
   onChange: (url: string) => void;
-  /** Tipo do upload: `link-bg` (links) ou `partner-bg` (parceiros). */
-  prefix?: 'link-bg' | 'partner-bg';
 }) {
   const [busy, setBusy] = useState(false);
   const [err, setErr] = useState<string | null>(null);
@@ -902,7 +948,7 @@ function LinkBannerField({
       const fd = new FormData();
       fd.append('file', file);
       fd.append('slug', slug);
-      fd.append('kind', `${prefix}:${linkId}`);
+      fd.append('kind', `link-bg:${linkId}`);
       const res = await fetch('/api/upload', { method: 'POST', body: fd });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {
@@ -1112,7 +1158,7 @@ function LoginScreen({ onLogin }: { onLogin: (pwd: string) => boolean }) {
         <div className="field">
           <input type="password" placeholder="Senha" value={pwd} onChange={(e) => { setPwd(e.target.value); setErr(false); }} autoFocus />
         </div>
-        {err && <p style={{ color: '#ef4444', fontSize: 13, margin: '0 0 10px' }}>Senha incorreta. (seu ip foi salvo,)</p>}
+        {err && <p style={{ color: '#ef4444', fontSize: 13, margin: '0 0 10px' }}>Senha incorreta. (Dica: admin123)</p>}
         <button className="btn btn-primary" style={{ width: '100%' }} type="submit">Entrar</button>
       </form>
     </div>
